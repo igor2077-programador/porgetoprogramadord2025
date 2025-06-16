@@ -1,0 +1,130 @@
+body{
+    /*cor de fundo*/
+    background-color: rgb(0, 0, 0);
+    /*cor da letra*/
+    color: rgb(255, 251, 0);
+    /*alinhamento de testo */
+   text-align: center;
+  font-family: serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(https://wallpapercave.com/wp/wp3284844.gif);
+  background-size: cover;
+}
+
+section{
+    background-color: rgba(220, 220, 220, 0.388);
+    color: rgb(0, 0, 0) ;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 30px rgba(111, 255, 0, 0.622);
+    box-sizing: 10px;
+}
+
+section:hover{
+    background-color: floralwhite;
+    transition: 0.9s;
+    font-size: 18px;
+}
+
+ul{
+    list-style: inside;
+    text-align: center;
+}
+li{
+    list-style: inside;
+}
+
+#img1{
+    border-radius: 15px;
+    border: 2px solid rgb(238, 208, 37);
+}
+
+#img2{
+    border: 2px solid rgb(255, 234, 0);
+    border-radius: 15px;
+}
+
+.links1{
+    color: blue;  
+}
+
+.links2{
+    color: rgba(255, 0, 242, 0.643);  
+}
+
+.links3{
+    color: rgba(0, 225, 255, 0.643);  
+}
+.links4{
+    color: rgba(38, 255, 0, 0.709);  
+}
+.links5{
+    color: rgb(0, 0, 0);  
+}
+.links1:hover,.links2:hover,.links3:hover,.links4:hover,.links5:hover{
+    font-weight::bold;
+}
+.menu{
+    background-color: rgb(255, 217, 0);
+    text-align: left;
+    padding: 10px;
+    color: black;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.menu ul li{
+    display: inline;
+    padding: 10px;
+    align-items: center;
+}
+
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-family: serif;
+    flex-wrap: wrap;
+}
+
+.menu ul{margin: 0px;}
+
+footer{
+    background-color: rgb(255, 217, 0);
+    margin-top: 40px;
+    color: black;
+    padding: 20px;
+}
+.celular{
+    display: none;}
+
+/*configuração de css para celular/tablet */
+@media(max-width: 1050px){
+    section{
+        font-size: 15px;
+    }
+
+    .celular{
+        display: block;
+    }
+    .menu ul{
+        display: none;
+    }
+
+    ul.mostrarMenu{
+        display: inline-block;
+    }
+    .menu ul li{
+        width: 100%;
+        /* border: 1px solid white; */
+        margin: 3px;
+        border-radius: 10px;
+        font-size: 30px;
+    }
+}
