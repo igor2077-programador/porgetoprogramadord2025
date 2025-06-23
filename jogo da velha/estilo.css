@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+body{
+     font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  background-color: rgba(171, 173, 175, 0.702);
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 170px;
+    border-radius: 15px;
+    background-color:purple;
+
+}
+.painel{
+   max-width: 1000px;
+   text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jogo{
+    margin-left: auto;
+    margin-right: auto;
+}
