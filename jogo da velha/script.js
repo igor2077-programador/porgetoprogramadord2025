@@ -5,8 +5,12 @@ function jogar(celula){
         celula.innerHTML = jogador;
     if(jogador =="x"){
         jogador = "o"
+        celula.stayle
     } 
     else{
         jogador = "x"
     }
+   
 }
+ function reiniciar(){
+    window.location.reload()}

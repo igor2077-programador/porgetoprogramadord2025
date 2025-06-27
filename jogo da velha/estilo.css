@@ -16,10 +16,41 @@ body{
 .painel{
    max-width: 1000px;
    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    background-color: rgba(157, 144, 144, 0.515);
 }
 .jogo{
     margin-left: auto;
     margin-right: auto;
+    border: none;
+}
+.botao{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px;
+}
+.botao:hover{
+    background-color: white;
+    color:black;
+    transition:2s;
+}
+body{
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2022/09/08154019/PELE-RAINHA.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@media(max-widht:1050px){
+    .quadrado{
+        width: 100px;
+        height: 100px;
+        font-size: 70px;
+    }
 }
