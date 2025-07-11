@@ -6,10 +6,21 @@ import webbrowser
 import tkinter as tk
 from tkinter import messagebox
 
+listaSites=[
+    "https://www.google.com",
+    "https://www.youtube.com",
+    "https://www.devemedia.com.br",
+    "https://www.wikipedia.org",
+]
+opcao = 6
+numSorteado = random.randint(1,opcao)
+ 
 
+def abriJanelas():
+    for posicao in range(len(listaSites)):
+        webbrowser.open(listaSites[posicao]) 
+       
 def sortear():
-    opcao = 6
-    numSorteado = random.randint(1, opcao)
  
 
     def verificarEscolha(escolha):
@@ -17,7 +28,7 @@ def sortear():
             print("Bye Bye word, seu pc será desligado!👻 ")
             messagebox.showerror("Perdeu!", "O computador Será desligado! 👻")
 
-            time.sleep(5)
+            time.sleep(3)
             if sys.platform == "win32":
                 os.system("shutdown /s /t 1")
             elif sys.platform == 'linux' or sys.platform == 'linux2':
@@ -57,5 +68,6 @@ root.title("Jogo do evento aleatório")
 tk.Label(root, text="Bem-vindo ao Jogo de Evento Aleatório!", font=("Arial", 20)).pack(pady=15)
 tk.Button(root, text="Iniciar Jogo", width=20, command=sortear).pack(pady=10)
 tk.Button(root, text="Ver regras", width=20, command=exibirRegras).pack(pady=10)
+tk.Button(root, text="abri navegdor", width=20, command=abriJanelas).pack(pady=10)
 tk.Button(root, text="Sair", width=20, command=sair).pack(pady=10)
 root.mainloop()
