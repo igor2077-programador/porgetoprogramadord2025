@@ -1,3 +1,4 @@
+
 .navbar{
    /* background-color: brown !important;*/
    background: linear-gradient(to right,rgb(36, 36, 145),rgb(0, 0, 0)) !important;  
@@ -12,13 +13,10 @@
     padding: 8px;
     text-decoration: none;
     font-size: 22px;
-}
-.menu-itens:hover{
-    color: orange;
-}
-.fundo-login{
+}.fundo-login{
     background-color: rgb(221, 221, 221);
-}
+}.menu-itens:hover{
+    color: orange;}
 .painel{
     background-color: rgb(62, 62, 131);
     width: 350px;
@@ -27,9 +25,9 @@
     margin: auto;
     margin-top: 100px;
     padding: 15px;
+    
 }
 .cabesario{
     color:floralwhite;
     text-align: center;
-    font-size: 40px;
-}
+    font-size: 40px;}
